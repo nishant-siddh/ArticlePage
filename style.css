@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+#navigationBar {
+    width: 100%;
+}
+
+.desktop_view_navbar {
+    height: 72px;
+}
+
+.mobile_view_navbar {
+    height: 24px;
+}
+
+.desktop_view_navbar .logo {
+    width: 162px;
+    height: 24px;
+}
+
+#searchBar {
+    width: 360px;
+    height: 42px;
+    background-color: #F2F2F2;
+}
+
+#searchBar input {
+    width: 100%;
+    outline: 0;
+}
+
+#hero_section {
+    height: 440px;
+    width: 100%;
+    /* background: url('./images/hero_banner.png'), lightgray 50% / cover no-repeat linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.60) 100%); */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.60) 100%), url('./images/hero_banner.png'), lightgray 50% / cover no-repeat;
+}
+
+#hero_section .hero_text {
+    /* width: fit-content; */
+    padding-top: 250px;
+}
+
+.list {
+    list-style: none;
+}
+
+.list > li {
+    margin-right: 20px;
+}
+
+.line {
+    width: 70px;
+}
+
+.location {
+    outline: none;
+}
+
+.small_text {
+    font-size: 10px;
+}
+
+.large_text {
+    font-size: 14px;
+}
+
+.flex_gap {
+    gap: 8px;
+}
+
+.article {
+    width: 100%;
+    max-width: 692px;
+}
+
+.edit_circle {
+    z-index: 999;
+    width: fit-content;
+    bottom: 20px;
+    right: 20px;
+}
+
+.edit_circle > div {
+    width: fit-content;
+}
+
+.edit_circle .pencil {
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog {
+    position: fixed;
+    width: 720px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog::backdrop {
+    background-color: hsla(210, 1%, 37%, 0.5);
+}
+
+.form_input {
+    height: 46px;
+    border: 1px solid #E5E5E5;
+}
+
+form input {
+    height: 100%;
+    padding-left: 10px;
+    border:none;
+    outline: none;
+    width: 100%;
+}
+
+.login_modal input {
+    width: 320px;
+}
+
+form .visibility_icon {
+    width: 18px;
+    top: 50%;
+    right: 10px;
+    transform: translate(-50%, -10px);
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+}
+
+.close_modal {
+    top: 25px;
+    right: -10px;
+    transform: translate(-25px, -10px);
+    z-index: 999;
+}
+
+.modal_upper_section {
+    color: #008A45;
+    background-color: #EFFFF4;
+    height: 50px;
+}

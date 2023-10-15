@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button>Click me</button>
+    <button id="openLoginModal">Login</button> -->
+    <!-- navigation menu -->
+    <nav id="navigationBar" class="border">
+        <div class="desktop_view_navbar d-lg-flex d-none justify-content-between px-5 align-items-center">
+            <img src="./images/logo.png" class="logo" alt="Logo">
+            <div id="searchBar" class="border-0 rounded-pill px-4 py-2 fs-6 text-light d-flex align-items-center">
+                <img src="./images/searchIcon.svg" alt="searchIcon">
+                <input type="search" name="" class="border-0 bg-transparent"
+                    placeholder="Search for your favorite groups in ATG">
+            </div>
+            <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="d-flex align-items-center fw-bold">
+                <span>Create account. <span data-open-modal class="text-primary" style="cursor: pointer">It’s free!</span></span>
+                <img src="./images/baseline-arrow_drop_down-24px.svg" style="cursor: pointer" alt="down_arrow">
+            </div>
+        </div>
+        <div class="d-lg-none d-flex justify-content-end align-items-center mobile_view_navbar">
+            <img src='./images/Group 3.png' class="me-3" style="width: 51px; height: 10px;" alt="">
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <div id="hero_section" class="position-relative text-light">
+        <div class="d-flex d-lg-none justify-content-between pt-2 px-3">
+            <img src="./images/arrow_back_24px.svg" class="m-3" alt="">
+            <!-- <button class="rounded border border-light bg-transparent">
+                <span class="text-light">Join Group</span>
+            </button> -->
+            <button type="button" class="btn btn-outline-light fs-6 py-0 px-2">Join Group</button>
+        </div>
+        <!-- <img src="./images/hero_banner.png" alt="hero image"> -->
+        <div class="hero_text container">
+            <h2 class="fw-bolder">Computer Engineering</h2>
+            <p>142,765 Computer Engineers follow this</p>
+        </div>
+    </div>
+
+    <!-- write a post section -->
+    <div class="container mt-4">
+        <div class="d-lg-flex d-none justify-content-between align-items-center border-bottom py-2">
+            <ul class="list d-flex m-0 p-0">
+                <li class="text-black">All Posts(32)</li>
+                <li class="text-secondary">Article</li>
+                <li class="text-secondary">Event</li>
+                <li class="text-secondary">Education</li>
+                <li class="text-secondary">Job</li>
+            </ul>
+
+            <div class="d-flex">
+                <button class="border-0 px-2 py-1 rounded-2">
+                    <span>Write a Post</span>
+                    <img src="./images/baseline-arrow_drop_down-24px.svg" alt="">
+                </button>
+                <button class="border-0 px-2 py-1 rounded-2 bg-primary text-light ms-3">
+                    <img src="./images/baseline-group_add-24px.svg" alt="">
+                    <span>Join Group</span>
+                </button>
+            </div>
+        </div>
+        <div class="position-relative d-lg-block d-none">
+            <span class="line position-absolute border border-dark"></span>
+            <!-- <hr> -->
+        </div>
+
+        <div class="d-lg-none d-flex align-items-center justify-content-between">
+            <p class="p-0 m-0 fw-bold">Posts(368)</p>
+            <button class="border-0 px-2 py-1 rounded-2">
+                <span>Filter: All</span>
+                <img src="./images/baseline-arrow_drop_down-24px.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+    <!-- article section -->
+    <div class="d-flex container justify-content-between align-items-start my-3">
+        <div class="d-flex flex-column flex_gap article">
+            <!-- article1 -->
+            <div class="d-flex flex-column flex_gap border rounded-3">
+                <img src="./images/article1_img.png" alt="">
+                <div class="p-4">
+                    <span class="large_text fw-bold">✍️ Article</span>
+                    <div class="d-flex mt-3 flex_gap justify-content-between align-items-start">
+                        <h2 class="article_title fw-bold">What if famous brands had regular fonts? Meet RegulaBrands!
+                        </h2>
+                        <img src="./images/baseline-more_vert-24px.svg" alt="">
+                    </div>
+                    <p class="large_text text-secondary fs-4">I’ve worked in UX for the better part of a decade. From
+                        now
+                        on, I plan to rei…</p>
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-5">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/writer1.png" alt="">
+                            <p class="m-0 mx-2 large_text fw-bold">Sarthak Kamra</p>
+                        </div>
+                        <div class="d-flex align-items-center flex_gap">
+                            <div>
+                                <img src="./images/eye_icon.svg" alt="">
+                                <span>1.4k views</span>
+                            </div>
+                            <img src="./images/baseline-share-24px.svg" class="p-3"
+                                style="background-color: rgb(233, 229, 229);" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- article2 -->
+            <div class="article d-flex flex-column flex_gap border rounded-3">
+                <img src="./images/article2_img.png" alt="">
+                <div class="p-4">
+                    <span class="large_text fw-bold">🔬️ Education</span>
+                    <div class="d-flex mt-3 flex_gap justify-content-between align-items-start">
+                        <h2 class="article_title fw-bold">Tax Benefits for Investment under National Pension Scheme
+                            launched by Government</h2>
+                        <img src="./images/baseline-more_vert-24px.svg" alt="">
+                    </div>
+                    <p class="large_text text-secondary fs-4">I’ve worked in UX for the better part of a decade. From
+                        now on, I plan to rei…</p>
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-5">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/writer2.png" alt="">
+                            <p class="m-0 mx-2 large_text fw-bold">Sarah West</p>
+                        </div>
+                        <div class="d-flex align-items-center flex_gap">
+                            <div>
+                                <img src="./images/eye_icon.svg" alt="">
+                                <span>1.4k views</span>
+                            </div>
+                            <img src="./images/baseline-share-24px.svg" class="p-3"
+                                style="background-color: rgb(233, 229, 229);" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- article3 -->
+            <div class="article d-flex flex-column flex_gap border rounded-3">
+                <img src="./images/article3_img.png" alt="">
+                <div class="p-4">
+                    <span class="large_text fw-bold">🗓️ Meetup</span>
+                    <div class="d-flex mt-3 flex_gap justify-content-between align-items-start">
+                        <h2 class="article_title fw-bold">Finance & Investment Elite Social Mixer @Lujiazui</h2>
+                        <img src="./images/baseline-more_vert-24px.svg" alt="">
+                    </div>
+                    <div class="d-flex flex-wrap my-3">
+                        <div class="d-flex">
+                            <img src="./images/baseline-today-24px.svg" alt="">
+                            <span class="fw-bolder">Fri, 12 Oct, 2018</span>
+                        </div>
+                        <div class="md-ms-5">
+                            <img src="./images/outline-location_on-24px 2.svg" alt="">
+                            <span class="fw-bolder">Ahmedabad, India</span>
+                        </div>
+                    </div>
+                    <button class="border bg-transparent rounded-3 py-2 mt-2" style="color: #E56135 ;width: 100%">Visit
+                        Website</button>
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-5">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/writer3.png" alt="">
+                            <p class="m-0 mx-2 large_text fw-bold">Ronal Jones</p>
+                        </div>
+                        <div class="d-flex align-items-center flex_gap">
+                            <div>
+                                <img src="./images/eye_icon.svg" alt="">
+                                <span>1.4k views</span>
+                            </div>
+                            <img src="./images/baseline-share-24px.svg" class="p-3"
+                                style="background-color: rgb(233, 229, 229);" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- article4 -->
+            <div class="article border rounded-3">
+                <div class="p-4">
+                    <span class="large_text fw-bold">💼️ Job</span>
+                    <div class="d-flex mt-3 flex_gap justify-content-between align-items-start">
+                        <h2 class="article_title fw-bold">Software Developer</h2>
+                        <img src="./images/baseline-more_vert-24px.svg" alt="">
+                    </div>
+                    <div class="d-flex flex-wrap my-3">
+                        <div class="d-flex">
+                            <img src="./images/outline-work_outline-24px.svg" alt="">
+                            <span class="fw-bolder d-inline-block m-0 text-truncate" style="max-width: 120px">Innovaccer
+                                Analytics Private Ltd.</span>
+                        </div>
+                        <div class="">
+                            <img src="./images/outline-location_on-24px 2.svg" alt="">
+                            <span class="fw-bolder">Noida, India</span>
+                        </div>
+                    </div>
+                    <button class="border bg-transparent rounded-3 py-2 mt-2" style="color: #02B875 ;width: 100%">Apply
+                        on Timesjobs</button>
+
+                    <div class="d-flex flex-wrap justify-content-between align-items-center mt-5">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/writer4.png" alt="">
+                            <p class="m-0 mx-2 large_text fw-bold">Joseph Gray</p>
+                        </div>
+                        <div class="d-flex align-items-center flex_gap">
+                            <div>
+                                <img src="./images/eye_icon.svg" alt="">
+                                <span>1.4k views</span>
+                            </div>
+                            <img src="./images/baseline-share-24px.svg" class="p-3"
+                                style="background-color: rgb(233, 229, 229);" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- side column -->
+        <aside class="d-lg-flex flex-column flex_gap d-none mt-2 ml-3">
+            <div class="d-flex align-items-center border-bottom">
+                <img src="./images/outline-location_on-24px 2.svg" alt="">
+                <input type="text" class="location border-0 mx-2" style="height: 20px"
+                    placeholder="Enter your location">
+                <img src="./images/baseline-edit-24px.svg" class="edit" alt="edit icon">
+                <!-- <img src="./images/cut_image.png" class="cutText" alt="cut icon"> -->
+            </div>
+            <div class="d-flex flex_gap align-items-start mt-4">
+                <img src="./images/baseline-error_outline-24px.svg" style="width: 14px" alt="">
+                <p class="location_text mr-2 text-secondary small_text">Your location will help us serve better <br>
+                    and extend a personalised experience.</p>
+            </div>
+
+            <!-- recommended groups -->
+            <div>
+                <div class="d-flex align-items-center flex_gap mt-4">
+                    <img src="./images/twotone-thumb_up-24px.svg" alt="">
+                    <p class="m-0">RECOMMENDED GROUPS</p>
+                </div>
+                <ul class="list p-0">
+                    <li class="d-flex justify-content-between mt-4">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/recommended1.png" alt="">
+                            <p class="m-0 mx-2">Leisure</p>
+                        </div>
+                        <button class="rounded-pill px-4 m-0 border-0">Follow</button>
+                    </li>
+                    <li class="d-flex justify-content-between mt-4">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/recommended2.png" alt="">
+                            <p class="m-0 mx-2">Activism</p>
+                        </div>
+                        <button class="rounded-pill px-4 m-0 border-0">Follow</button>
+                    </li>
+                    <li class="d-flex justify-content-between mt-4">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/recommended3.png" alt="">
+                            <p class="m-0 mx-2">MBA</p>
+                        </div>
+                        <button class="rounded-pill px-4 m-0 border-0">Follow</button>
+                    </li>
+                    <li class="d-flex justify-content-between mt-4">
+                        <div class="d-flex align-items-center">
+                            <img src="./images/recommended4.png" alt="">
+                            <p class="m-0 mx-2">Philosophy</p>
+                        </div>
+                        <button class="rounded-pill px-4 m-0 border-0">Follow</button>
+                    </li>
+                </ul>
+
+                <div class="d-flex justify-content-end mt-5 me-2 text-primary">See More...</div>
+            </div>
+        </aside>
+    </div>
+
+    <!-- edit circle -->
+    <div class="edit_circle position-fixed">
+        <div class="position-relative">
+            <img src="./images/Circle.svg" alt="">
+            <img src="./images/edit_circle.svg" class="pencil position-absolute" alt="">
+        </div>
+    </div>
+
+    <!-- signup modal -->
+    <dialog data-modal class="signup_modal rounded-3 border-0">
+        <div class="d-none modal_upper_section d-md-flex align-items-center justify-content-center">Let's learn, share &
+            inspire
+            each other with our passion for computer engineering. Sign up now 🤘🏼</div>
+
+        <div class="d-flex flex-wrap align-items-center justify-content-between px-5 my-4">
+            <h2 class="fw-bold">Create Account</h2>
+            <p class="already_have_account text-secondary fw-bold">
+                Already have an account? <span class="text-primary" id="signIn" style="cursor: pointer;">Sign In</span>
+            </p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-evenly px-4">
+            <form method="dialog">
+                <div class="d-flex form_input">
+                    <input type="text" name="" id="" placeholder="First Name" class="border-end">
+                    <input type="text" name="" id="" placeholder="Last Name">
+                </div>
+                <div class="form_input">
+                    <input type="email" name="" id="email" placeholder="Email">
+                </div>
+                <div class="form_input d-flex mr-5 position-relative">
+                    <input type="password" name="" id="password" placeholder="Password">
+                    <img src="./images/visibility_24px.svg" class="visibility_icon position-absolute" alt="">
+                </div>
+                <div class="form_input">
+                    <input type="password" name="" id="confirm_password" placeholder="Confirm Password">
+                </div>
+                <button type="button" class="bg-primary rounded-pill border-0 text-light my-4">Create Account</button>
+
+
+                <div class="d-flex flex-column flex_gap">
+                    <div
+                        class="sign_up_option border d-flex align-items-center justify-content-center flex_gap rounded-2 py-2">
+                        <img src="./images/f_logo_RGB-Blue_1024.png" alt="">
+                        <p class="m-0">Sign up with Facebook</p>
+                    </div>
+
+                    <div
+                        class="sign_up_option border d-flex align-items-center justify-content-center flex_gap rounded-2 py-2">
+                        <img src="./images/search.png" alt="">
+                        <p class="m-0">Sign up with Google</p>
+                    </div>
+                </div>
+
+            </form>
+            <div style="width: 320px" class="d-md-flex d-none flex-column align-items-center">
+                <img src="./images/atg_illustration.png" alt="">
+                <p class="text-secondary small_text" style="text-align: center;">By signing up, you agree to our Terms &
+                    conditions, Privacy policy
+                </p>
+            </div>
+
+        </div>
+        
+        <button data-close-modal>Close</button>
+        <!-- close icon -->
+        <button data-close-modal id="signIn_modal_close" class="close_modal position-absolute border-0 bg-transparent">
+            <img src="./images/cut_image.png" alt="">
+        </button>
+    </dialog>
+
+    <!-- login modal -->
+    <dialog data-login-modal class="login_modal rounded-3 border-0">
+        <div class="d-none modal_upper_section d-md-flex align-items-center justify-content-center">Let's learn, share &
+            inspire
+            each other with our passion for computer engineering. Sign up now 🤘🏼</div>
+
+        <div class="d-flex flex-wrap align-items-center justify-content-between px-5 my-4">
+            <h2 class="fw-bold d-md-block d-none">Sign In</h2>
+            <h2 class="fw-bold d-block d-md-none">Welcome back!</h2>
+            <p class="already_have_account text-secondary fw-bold">
+                Don’t have an account yet? <span class="text-primary" id="createAccount" style="cursor: pointer;">Create new for
+                    free!</span>
+            </p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-evenly px-4">
+            <form method="dialog" class="dialog">
+                <div class="form_input">
+                    <input type="email" name="" id="email" placeholder="Email">
+                </div>
+                <div class="form_input d-flex mr-5 position-relative">
+                    <input type="password" name="" id="password" placeholder="Password">
+                    <img src="./images/visibility_24px.svg" class="visibility_icon position-absolute" alt="">
+                </div>
+                <button type="button" class="bg-primary rounded-pill border-0 text-light my-4">Sign In</button>
+
+                <div class="d-flex flex-column flex_gap">
+                    <div
+                        class="sign_up_option border d-flex align-items-center justify-content-center flex_gap rounded-2 py-2">
+                        <img src="./images/f_logo_RGB-Blue_1024.png" alt="">
+                        <p class="m-0">Sign up with Facebook</p>
+                    </div>
+
+                    <div
+                        class="sign_up_option border d-flex align-items-center justify-content-center flex_gap rounded-2 py-2">
+                        <img src="./images/search.png" alt="">
+                        <p class="m-0">Sign up with Google</p>
+                    </div>
+                    <p class="fw-bold mt-3" style="text-align: center;">Forgot Password?</p>
+                </div>
+
+            </form>
+            <div style="width: 320px" class="d-md-flex d-none flex-column align-items-center">
+                <img src="./images/atg_illustration.png" alt="">
+            </div>
+
+        </div>
+
+        <!-- close icon -->
+        <button data-close-loginModal class="close_modal position-absolute border-0 bg-transparent">
+            <img src="./images/cut_image.png" alt="">
+        </button>
+    </dialog>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
